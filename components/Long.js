@@ -101,7 +101,7 @@ const Long = () => {
       <div className='homePage'>
       <h1 className="font-poppins dark:text-white text-nft-black-1 text-2xl minlg:text-2xl font-semibold ml-4 xs:ml-0">Virtual a.i</h1>
 
-        <div style={{ display: animation ? 'block' : 'none' }}>
+        <div style={{ display: animation ? 'block' : 'none' }} className='mt-6'>
           <p className={`rotatingText-adjective hide`}>
             {leters.slice(-14, -7).map((i) => i + ' ')}
           </p>
@@ -110,15 +110,20 @@ const Long = () => {
           </p>
         </div>
 
-        <div>
+        <div className='font-Epilogue'>
           <p>{leters.slice(-14, -7).map((i) => i + ' ')}</p>
+
+
           <div style={{ display: 'flex', marginTop: '5px' }}>
-            <p>{leters.slice(-7, -2).map((i) => i + ' ')}</p>
+            <p className='font-Epilogue mt-6 ml-3'>{leters.slice(-7, -2).map((i) => i + ' ')}</p>
             
               &nbsp;
            
           </div>
         </div>
+
+
+        <div className='mt-6'>
 
         <button onClick={startRec} type='button' id='start'  className='ml-3'>
           Start
@@ -127,11 +132,16 @@ const Long = () => {
           Stop
         </button>
 
+
+        </div>
+
+      
+
         
        
       </div>
       <textarea
-        className='textarea'
+        className='textarea font-Epilogue'
         type='text'
         value={text}
         readOnly
