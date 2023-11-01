@@ -58,6 +58,7 @@ const Long = () => {
         });
       };
 
+      
       mediaRecorder.start(1100);
       console.log('started');
 
