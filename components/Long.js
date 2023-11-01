@@ -115,15 +115,15 @@ const Long = () => {
           <div style={{ display: 'flex', marginTop: '5px' }}>
             <p>{leters.slice(-7, -2).map((i) => i + ' ')}</p>
             
-              &nbsp;#
+              &nbsp;
            
           </div>
         </div>
 
-        <button onClick={startRec} type='button' id='start'>
+        <button onClick={startRec} type='button' id='start'  className='ml-3'>
           Start
         </button>
-        <button onClick={stopRec} type='button' id='stop'>
+        <button onClick={stopRec} type='button' id='stop' className='ml-2'>
           Stop
         </button>
 
