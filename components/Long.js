@@ -127,28 +127,10 @@ const Long = () => {
           Stop
         </button>
 
-        <p>
-          click <a href='#start'>start</a> button speak, wait, finaly click{' '}
-          <a href='#stop'>stop</a> button
-        </p>
-        <p>
-          <a onClick={() => setCc((state) => !state)}>
-            {cc ? 'hide cc' : 'show cc'}
-          </a>
-        </p>
-        <p>
-          <a onClick={() => setAnimation((state) => !state)}>
-            {cc ? 'hide animation' : 'show animation'}
-          </a>
-        </p>
+        
+       
       </div>
-      <textarea
-        className='textarea'
-        type='text'
-        value={text}
-        readOnly
-        style={{ display: cc ? 'block' : 'none' }}
-      />
+     
     </div>
   );
 };
