@@ -7,7 +7,9 @@ require("dotenv").config;
 var mediaRecorder; 
 var audioText;
 
-const DG_KEY = process.env.DG_KEY;
+// const DG_KEY = process.env.DG_KEY;
+const DG_KEY = config.DG_KEY;
+
 
 
 
@@ -97,9 +99,7 @@ const Long = () => {
   return (
     <div>
       <div className='homePage'>
-        <a href='https://deepgram.com' target='_blank'>
-          Deepgram AI 🤖
-        </a>
+      <h1 className="font-poppins dark:text-white text-nft-black-1 text-2xl minlg:text-2xl font-semibold ml-4 xs:ml-0">Virtual a.i</h1>
 
         <div style={{ display: animation ? 'block' : 'none' }}>
           <p className={`rotatingText-adjective hide`}>
