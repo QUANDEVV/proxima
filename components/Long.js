@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useTheme } from 'next-themes';
 import Image from 'next/image';
 import images from '../assets';
+import Typed from 'react-typed';
 // import VideoPlayer from './VideoPlayer';
 
 async function getData() {
@@ -72,10 +73,28 @@ const Long = () => {
     <div className="flex justify-center sm:px-2 p-2 mt-6 mb-40">
       <div className="w-full minmd:w-4/5">
         <div>
-          <h1 className="font-poppins dark:text-white text-nft-black-1 text-2xl minlg:text-4xl font-semibold ml-4 xs:ml-0">Discover the Power of A.i</h1>
-
-
+          <h1 className="font-poppins dark:text-white text-nft-black-1 text-2xl minlg:text-4xl font-semibold ml-4 xs:ml-0">
+          <Typed 
+          className='text-white font-epilogue'
+          strings={['Find Your best customers with Ai audience']}
+          typeSpeed={120}
+          backSpeed={140}
+          loop
           
+          
+          />
+          
+          
+          </h1>
+
+
+
+
+         
+
+
+
+
           
 
         </div>
