@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import config from './config';
 
+
+require("dotenv").config;
+
 var mediaRecorder; 
 var audioText;
-// const DG_KEY = config.DG_KEY;
-// const DG_KEY = process.env.DG_KEY;
-const DG_KEY = "df110504b5249be49b9547cb6db6dea3a1906637"
+
+const DG_KEY = process.env.DG_KEY;
+
 
 
 
