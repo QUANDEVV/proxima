@@ -130,7 +130,13 @@ const Long = () => {
         
        
       </div>
-     
+      <textarea
+        className='textarea'
+        type='text'
+        value={text}
+        readOnly
+        style={{ display: cc ? 'block' : 'none' }}
+      />
     </div>
   );
 };
